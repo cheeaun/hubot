@@ -214,7 +214,7 @@ class Robot
         HttpClient.create("#{herokuUrl}hubot/ping")
           .post() (err, res, body) =>
             @logger.info 'keep alive ping!'
-      , 1200000
+      , 240000
 
   # Load the adapter Hubot is going to use.
   #
